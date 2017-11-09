@@ -1,0 +1,167 @@
+/*typography*/
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+body {
+	font-family: 'verdana', sans-serif; 
+	overflow-x: hidden;
+}
+
+p {
+	line-height: 24px;
+}
+
+h1 {
+	font-family: 'Rubik', sans-serif;
+	color: #006CB4;
+	font-weight: 100;
+}
+
+h2 {
+	font-family: 'Rubik', sans-serif;
+	color: #0c8099;
+	font-size: 1.2rem;
+	font-weight: 100;
+}
+
+
+/*page*/
+body, html {
+	width: 100vw;
+	height: 100vh;
+	/*overflow: hidden;*/
+}
+
+/*utility*/
+
+.double-col {
+	width: 66%;
+}
+.double-col {
+	width: 66%;
+}
+
+/*layout*/
+.header {
+	width: 100%;
+	height: 243px;
+	overflow: hidden;
+	background: url("../img/header.jpg") no-repeat center top;
+}
+
+.main {
+	width: 100%;
+	max-width: 1165px;
+	margin: 0 auto;
+} 
+
+.main .intro-text {
+	margin-top: 3em;
+}
+
+.main .video-block {
+	width: 100%;
+    margin-bottom: 8em;
+}
+
+.main .video-block img {
+	width: 100%;
+	height: auto;
+}
+
+.content--kaart {
+	background: #76C6BF;
+}
+
+.content--kaart svg {
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	/* margin: 0 10%; */
+	padding: 1rem 10%;
+}
+
+.vjs--container, .content video { 
+	width: 100vw;
+    height: 56.25vw;
+	position: relative;
+}
+
+.videooverlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	/*height: 655px;*/
+	background: #76C6BF;
+	transition: all .5s;
+	z-index: 2;
+}
+
+.videooverlay--intro {
+	opacity: 1;
+}
+
+.videooverlay svg {
+	display: none;
+	/*width: 60vw;*/
+    height: 90%;
+	margin: 2% auto;
+    /*padding: 4vw 20vw 2vw;*/
+}
+
+.videooverlay--intro svg {
+	display: block;
+}
+
+.overlayplay {
+    opacity: 0;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-family: 'rubrik_mediumregular',verdana,sans-serif;
+    font-weight: normal;
+    font-size: 1.1vw;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    z-index: 3;
+}
+
+.overlayback {
+    opacity: 0;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-family: 'rubrik_mediumregular',verdana,sans-serif;
+    font-weight: normal;
+    font-size: 1.1vw;
+    color: white;
+    /*border: .15vw solid white;*/
+    /*padding: 1vw 2vw;*/
+    cursor: pointer;
+    transition: all .5s;
+    z-index: 3;
+}
+
+.overlayback--intro {
+	opacity: 1;
+}
+
+.overlayhint {
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    /* background: red; */
+    text-align: center;
+    top: 3%;
+    /* right: 21%; */
+    font-family: 'rubrik_mediumregular',verdana,sans-serif;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+    color: white;
+    border-bottom: .15vw solid rgba(0,0,0,0);
+    transition: all .5s;
+    z-index: 3;
+}
