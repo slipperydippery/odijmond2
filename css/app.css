@@ -165,3 +165,7 @@ body, html {
     transition: all .5s;
     z-index: 3;
 }
+
+.noshow {
+	display: none;
+}

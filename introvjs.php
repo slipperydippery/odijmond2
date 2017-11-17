@@ -9,11 +9,26 @@
 <link href="https://vjs.zencdn.net/5.17.0/video-js.css" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet">
 <link href="css/app.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://quest.app/img/favicon.png">
 
 </head>
 <body>
 
 <div class="vjs--container content">
+	<video 
+	    preload="auto" 
+	    id="odijmond-video"
+	    class="video-js vjs-big-play-centered vjs-16-9" 
+	    autoplay 
+	    playsinline
+	    data-setup="{}"
+	>
+	    <source src="video/intro.mp4" type="video/mp4">
+	    <p class="vjs-no-js">
+	        To view this video please enable JavaScript, and consider upgrading to a web browser that
+	        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+	    </p>
+	</video>	
 	<div class="videooverlay videooverlay--intro" id="videooverlay">
 		<?php
 			include 'partials/kaart.php';
@@ -22,7 +37,7 @@
 	<div class="overlayhint" id="overlayhint">
 		Klik op een tekstballon om een andere video af te spelen
 	</div>
-	<div class="overlayback" id="overlayback" onClick="window.location='https://www.odijmond.nl/over-ons/maak-kennis/';">
+	<div class="overlayback overlayback--intro" id="overlayback" onClick="window.location='https://www.odijmond.nl/over-ons/';">
 		<< Terug naar website
 	</div>
 	<div class="overlayplay" id="overlayplay">
